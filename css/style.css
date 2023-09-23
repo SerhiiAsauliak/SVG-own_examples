@@ -1,0 +1,30 @@
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+.svg{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+}
+.text{
+    font-size: 16px;
+    fill: #000;
+}
+.rect{
+    fill: none;
+    stroke-width: 12px;
+    stroke: cadetblue;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;transition: all 0.8s ease-in-out;
+}
+.svg-rect:hover .rect{
+    stroke-dashoffset: 0;
+}
+.image{
+    width: 300px;
+    clip-path: url(#apple);
+}
